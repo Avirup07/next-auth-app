@@ -27,10 +27,10 @@ const Header = () => {
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
             <SignedIn>
-              <UserButton />
+              <UserButton className="cursor-pointer" />
             </SignedIn>
             <SignedOut>
-              <SignInButton />
+              <SignInButton className="cursor-pointer" />
             </SignedOut>
           </ul>
         </nav>
