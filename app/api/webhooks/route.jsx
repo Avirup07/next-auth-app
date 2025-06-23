@@ -13,6 +13,10 @@ export async function POST(req) {
     );
     console.log("Webhook payload:", evt.data);
 
+    if (eventType === "user.created") {
+        console.log("New user created");
+    }
+
     return new Response("Webhook received", { status: 200 });
   } catch (err) {
     console.error("Error verifying webhook:", err);
