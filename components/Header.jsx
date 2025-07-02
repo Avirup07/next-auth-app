@@ -28,13 +28,7 @@ const Header = () => {
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
             <SignedIn>
-              <Suspense
-                fallback={
-                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF02Jj8T2t7PdkytAw42HDuuSz7yXguKn8Lg&s"
-                }
-              >
                 <UserButton className="cursor-pointer" />
-              </Suspense>
             </SignedIn>
             <SignedOut>
               <SignInButton className="cursor-pointer" />
